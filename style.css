@@ -1,0 +1,66 @@
+html {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    background-color: #FFD2FC;
+    color: #231B1B;
+}
+
+#game-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+#game-assets {
+    height: 50vh;
+}
+
+#game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inventory-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.button {
+    width: 25vw;   
+    background-color: #7EBCE6;
+    border: none;
+    color: #231B1B;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: #E980FC;
+    cursor: pointer;
+    transform: scale(110%);
+    color: #DDFFF7;
+}
+
+#inventory-title {
+    justify-self: flex-start;
+}
+
+.image {
+    height: 50vh;
+}
+
+.toggle {
+    visibility: hidden;
+}
