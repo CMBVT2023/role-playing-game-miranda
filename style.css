@@ -14,6 +14,13 @@ body {
     color: #231B1B;
 }
 
+#watermark {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    font-size: 12px;
+}
+
 #game-stats {
     display: flex;
     justify-content: space-around;

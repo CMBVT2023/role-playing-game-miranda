@@ -227,7 +227,7 @@ function finalBoss() {
 function buyWeapon() {
     if (userGold >= 40) {
 
-        if (currentWeapon < weapons.length) {
+        if (currentWeapon < weapons.length - 1) {
             currentWeapon++;
 
             gameTitleDisplay.innerHTML = "New Weapon Acquired!";
@@ -333,8 +333,8 @@ function buyDrink() {
 function randomDrop() {
     let randomNum = Math.ceil(Math.random() * 100);
 
-    if (randomNum >= 75) {
-        let num = Math.ceil(Math.random() * 4);
+    if (randomNum >= 0) {
+        let num = Math.ceil(Math.random() * 3);
 
         userInventory.push(potentialItems[num]);
         updateInventory();
