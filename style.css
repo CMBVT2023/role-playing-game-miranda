@@ -16,9 +16,10 @@ body {
 
 #watermark {
     position: absolute;
-    bottom: 2%;
-    right: 2%;
+    bottom: 1%;
+    right: 1%;
     font-size: 12px;
+    text-align: end;
 }
 
 #game-stats {

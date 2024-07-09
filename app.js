@@ -129,13 +129,15 @@ const locations = [
         name: "You Lose",
         buttons: ["Replay", "Replay", "Replay"],
         buttonFunctions: [resetGame, resetGame, resetGame],
-        text: "Your health depleted and now you can no longer go on, restart the game to try again."
+        text: "Your health depleted and now you can no longer go on, restart the game to try again.",
+        image: "https://images.pexels.com/photos/7407375/pexels-photo-7407375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         name: "You Win",
         buttons: ["Replay", "Replay", "Replay"],
         buttonFunctions: [resetGame, resetGame, resetGame],
-        text: "You finally won the game by defeating the final boss and have now everyone in the area from their evil ways."
+        text: "You finally won the game by defeating the final boss and have now saved everyone in the area from their evil ways.",
+        image: "https://images.pexels.com/photos/949592/pexels-photo-949592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         name: "High Score Battle Royal",
@@ -333,8 +335,8 @@ function buyDrink() {
 function randomDrop() {
     let randomNum = Math.ceil(Math.random() * 100);
 
-    if (randomNum >= 0) {
-        let num = Math.ceil(Math.random() * 3);
+    if (randomNum >= 75) {
+        let num = Math.floor(Math.random() * 4);
 
         userInventory.push(potentialItems[num]);
         updateInventory();
